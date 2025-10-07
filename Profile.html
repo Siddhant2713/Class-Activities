@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        
+
+        body {
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e0e1e1;
+        }
+
+
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: 0 10px 10px rgba(152, 145, 145, 0.558);
+
+        }
+        .image {
+            margin: 10px;
+        }
+
+        .image img {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            margin: 10px;
+
+
+        }
+
+        .information {
+            margin: 20px;
+            padding: 20px;
+            font-size: 1.2rem;
+            color: #333;
+            max-width: 400px;
+            text-align: center;
+            background-color: white;
+        }
+
+       .buttons {
+           display: flex;
+           justify-content: space-evenly;
+           margin-top: 20px;
+        }
+        .button{
+            height: 50px;
+            width: 150px;
+            border-radius: 15px;
+            background-color: rgba(94, 154, 218, 0.4);
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgba(85, 125, 167, 0.7);
+            color: white;
+            transition: 1s;
+        }
+        @media (max-width: 640px) {
+            .container{
+                flex-direction: column;
+                align-items: center;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="icon-7797704.png" alt="Profile Picture">
+            <p style="font-size: 25px;"><strong>Siddhant Sawant</strong></p>
+        </div>
+        <div class="information">
+            <p class="info">I am a web developer with a passion for creating interactive and user-friendly applications.
+            </p>
+            <p class="info">I have experience in HTML, CSS, and JavaScript, and I am constantly learning new
+                technologies to improve my skills.</p>
+            <div class="buttons">
+            <button class="button">Contact Me</button>
+            <button class="button">Portfolio</button>
+        </div>
+
+        </div>
+        
+    </div>
+</body>
+
+</html>
